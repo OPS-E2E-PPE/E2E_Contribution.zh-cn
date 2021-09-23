@@ -1,5 +1,4 @@
 {
-  "docs_build_engine": { "name": "docfx_v2"},
   "docsets_to_publish": [
     {
       "docset_name": "E2E_Contribution",
@@ -19,6 +18,7 @@
     }
   ],
   "notification_subscribers": [],
+  "sync_notification_subscribers": null,
   "branches_to_filter": [
     "live-sxs",
     "master-sxs"
@@ -33,7 +33,7 @@
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft.zh-cn",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     },
     {
@@ -42,10 +42,13 @@
       "branch": "live",
       "branch_mapping": {
         "live": "live",
-        "master": "master"
+        "main": "main"
       }
     }
   ],
   "branch_target_mapping": {},
+  "docs_build_engine": {
+    "name": "docfx_v2"
+  },
   "need_generate_pdf_url_template": false
 }
